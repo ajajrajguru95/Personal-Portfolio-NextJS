@@ -1,0 +1,39 @@
+@tailwind base;
+.theme-btn{
+  @apply inline-flex bg-transparent border-2 border-primary px-4 py-4 relative font-medium text-primary transition-colors duration-300;
+  &:before{
+    content: '';
+    @apply absolute inset-0 bg-primary transition-transform duration-300 scale-x-0 origin-right -z-10;
+  }
+  &:hover{
+    @apply text-themeDark;
+    &:before{
+      @apply scale-x-100 origin-left;
+    }
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .section-heading{
+    @apply text-[3rem] leading-[1.4] font-medium;
+  }
+  .section-desc{
+    @apply text-2xl leading-7 text-textLight;
+  }
+}
+
+
+.blob-wrapper{
+  img{
+    background-color: red;
+    mask: url('/mask.svg') no-repeat
+    center;
+  }
+}
