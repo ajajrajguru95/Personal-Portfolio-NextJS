@@ -13,10 +13,13 @@ const BlogPosts = ({params}) => {
 
     // console.log(postID);
 
+
   return (
     <>
         <div className="blogDetails">
+          {data?.title && (
             <h1>{data.title}</h1>
+          )}
         </div>
     </>
     

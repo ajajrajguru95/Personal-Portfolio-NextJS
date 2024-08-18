@@ -8,17 +8,14 @@ export default function Home() {
   
   return (
 
-    <>
+    <section className="fade-in home">
       {/* Main Body and components */}
-      <main className="">
+
         <Banner />
-        {/* <a href="/api/auth/linkedin">Fetch Recommendations</a>
-        <Recommendations /> */}
 
-      </main>
-     
 
-    </>
+
+    </section>
 
 
   );
