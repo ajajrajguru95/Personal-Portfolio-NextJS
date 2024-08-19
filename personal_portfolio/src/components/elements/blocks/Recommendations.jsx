@@ -120,7 +120,7 @@ const Recommendations = () => {
         {/* <div className="flex gap-20"> */}
 
         <h2 className="text-[3rem] py-8 font-medium">
-          What Collegues say's about <span className='bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-semibold'>Ajaj</span> <br /> and the recommendations he received.
+          What Collegues say&apos;s about <span className='bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-semibold'>Ajaj</span> <br /> and the recommendations he received.
         </h2>
 
         <Carousel

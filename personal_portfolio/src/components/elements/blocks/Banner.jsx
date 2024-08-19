@@ -13,7 +13,7 @@ const Banner = () => {
             <section className='home-banner flex pb-[15rem] gap-10 container mx-auto items-center'>
                 <div className='flex-initial w-[60%] flex flex-col gap-10 items-baseline'>
                     <h1 className='font-normal'>
-                        Howdy, I'm <span className='bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-semibold'>Ajaj</span>.
+                        Howdy, I&apos;m <span className='bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-semibold'>Ajaj</span>.
                     </h1>
                     {/* <DividerText>Introduction</DividerText> */}
 
@@ -22,7 +22,7 @@ const Banner = () => {
                     </h2>
 
                     <p className='section-desc'>
-                        I'm Kyle Craven, a digital designer and creative Webflow developer — I collaborate with brands globally to design impactful, mission-focused websites that drive results and achieve business goals
+                        I&apos;m Kyle Craven, a digital designer and creative Webflow developer — I collaborate with brands globally to design impactful, mission-focused websites that drive results and achieve business goals
                     </p>
 
                     <Link href="/about" className="theme-btn">About Me</Link>
