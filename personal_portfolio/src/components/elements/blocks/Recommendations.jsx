@@ -115,8 +115,8 @@ const Recommendations = () => {
   const randomizedPositions = recommendations.map((_, idx) => positionStyles[idx % positionStyles.length]);
 
   return (
-    <section className="recommendations bg-secondary py-20 overflow-x-hidden">
-      <div className="container relative after:content-[''] after:absolute after:left-[98%] after:top-0 after:w-[500px] after:h-full after:blur-md after:bg-secondary">
+    <section className="recommendations py-20 overflow-x-hidden">
+      <div className="container relative after:content-[''] after:absolute after:left-[98%] after:top-0 after:w-[500px] after:h-full after:blur-md after:bg-background">
         {/* <div className="flex gap-20"> */}
 
         <h2 className="text-[3rem] py-8 font-medium">

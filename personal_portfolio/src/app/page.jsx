@@ -2,6 +2,7 @@
 import Banner from "../components/elements/blocks/Banner";
 import Image from "next/image";
 import Recommendations from '../components/elements/blocks/Recommendations'
+import Skills from '../components/elements/blocks/Skills'
 
 
 export default function Home() {
@@ -12,6 +13,8 @@ export default function Home() {
       {/* Main Body and components */}
 
         <Banner />
+
+        <Skills />
 
       {/* Recommendations */}
       <Recommendations />
