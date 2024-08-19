@@ -86,8 +86,8 @@ module.exports = {
           fontSize: "10px",
         },
         body: {
-          color: theme("colors.textColor"),
-          background: theme("colors.background"),
+          // color: theme("colors.textColor"),
+          // background: theme("colors.background"),
           fontSize: "1.6rem",
           margin: "0",
         },

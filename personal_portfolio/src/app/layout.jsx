@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
           >
         {/* Site Header */}
         <Header />
-        <main className="pt-[15rem]">
+        <main className="pt-12">
           {children}
         </main>
         {/* footer */}

@@ -1,7 +1,7 @@
 
 import Banner from "../components/elements/blocks/Banner";
 import Image from "next/image";
-import Recommendations from "../components/elements/blocks/Recommendations";
+import Recommendations from '../components/elements/blocks/Recommendations'
 
 
 export default function Home() {
@@ -13,6 +13,8 @@ export default function Home() {
 
         <Banner />
 
+      {/* Recommendations */}
+      <Recommendations />
 
 
     </section>

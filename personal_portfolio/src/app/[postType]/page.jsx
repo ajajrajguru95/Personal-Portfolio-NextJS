@@ -23,7 +23,7 @@ const CustomTypes = async ({ params }) => {
 
     return (
         <section className='fade-in'>
-            <ul className={`${params.postType == 'sectors' ? 'sectors' : 'test'}`}>
+            <ul className="">
                 {posts.map((post, idx) => (
                     <li key={idx} className='mb-5'>
                         <h2>
