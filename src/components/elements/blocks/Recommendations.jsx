@@ -69,7 +69,7 @@ const Recommendations = () => {
     {
       cover: "sanjay",
       title: "Sanjay reported directly to Ajaj",
-      content: "I had the privilege of working closely with Ajaj Rajguru as my tech lead during our time at Kilowott. I can confidently say that he is one of the most exceptional tech leads I've had the pleasure of collaborating with. What truly sets Ajaj Rajguru apart, though, is his leadership style. He fosters a positive and collaborative work environment where team members feel valued and empowered. His excellent communication skills, both technical and interpersonal, ensured that everyone on the team was on the same page and working cohesively toward our objectives. I am genuinely grateful for the opportunity to work under Ajaj Rajguru's leadership, and I can confidently say that he has had a lasting and positive impact on my career. Ajaj Rajguru is not only a brilliant tech lead but also a fantastic mentor and colleague.",
+      content: "I had the privilege of working closely with Ajaj Rajguru as my tech lead during our time at Kilowott. I can confidently say that he is one of the most exceptional tech leads I've had the pleasure of collaborating with. He fosters a positive and collaborative work environment where team members feel valued and empowered. His excellent communication skills, both technical and interpersonal, ensured that everyone on the team was on the same page and working cohesively toward our objectives. I am genuinely grateful for the opportunity to work under Ajaj Rajguru's leadership, and I can confidently say that he has had a lasting and positive impact on my career. Ajaj Rajguru is not only a brilliant tech lead but also a fantastic mentor and colleague.",
       author: "Sanjay Rajoriya",
       designation: "Software Developer at Kilowott",
     },
@@ -97,7 +97,7 @@ const Recommendations = () => {
     {
       cover: "utkarsh",
       title: "Utkarsh reported directly to Ajaj",
-      content: "I've had the privilege of working closely with Ajaj for the past and can wholeheartedly vouch for his exceptional skills and leadership qualities. His role as a Frontend Technical Lead has been instrumental in the success of our projects. Ajaj not only brings his technical expertise to the table, but he also demonstrates exceptional leadership skills. He has a knack for guiding the team with a clear vision, setting achievable goals, and ensuring that each member's strengths are utilized effectively. His ability to foster collaboration and open communication has resulted in a more cohesive and productive team. Above all, Ajaj leads by example. His dedication to continuous learning sets a precedent for the team to strive for excellence.",
+      content: "I've had the privilege of working closely with Ajaj for the past and can wholeheartedly vouch for his exceptional skills and leadership qualities. His role as a Frontend Technical Lead has been instrumental in the success of our projects. Ajaj not only brings his technical expertise to the table, but he also demonstrates exceptional leadership skills. He has a knack for guiding the team with a clear vision, setting achievable goals, and ensuring that each member's strengths are utilized effectively. His dedication to continuous learning sets a precedent for the team to strive for excellence.",
       author: "Utkarsh Bokade",
       designation: "Frontend Developer at TenTwenty",
     }
@@ -119,7 +119,7 @@ const Recommendations = () => {
       <div className="container relative after:content-[''] after:absolute after:left-[98%] after:top-0 after:w-[500px] after:h-full after:blur-md after:bg-background">
         {/* <div className="flex gap-20"> */}
 
-        <h2 className="text-[3rem] py-8 font-medium">
+        <h2 className="text-[2.5rem] md:text-[3rem] py-8 font-medium">
           What Collegues say&apos;s about <span className='bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-semibold'>Ajaj</span> <br /> and the recommendations he received.
         </h2>
 
@@ -161,12 +161,12 @@ const Recommendations = () => {
                       </div>
                       <div className="flex-1 text-background flex flex-col gap-5 justify-between">
                         <div className="flex-1 flex flex-col gap-5">
-                          <h2 className="text-4xl font-bold">{item.title}</h2>
-                          <p className="text-[1.4rem] leading-9">{item.content}</p>
+                          <h2 className="text-2xl md:text-4xl font-bold">{item.title}</h2>
+                          <p className="text-[1.15rem] md:text-[1.4rem] leading-[1.5] md:leading-9">{item.content}</p>
                         </div>
                         <div className="recommended-by">
-                          <h3 className="uppercase font-bold">{item.author}</h3>
-                          <p className="designation">{item.designation}</p>
+                          <h3 className="text-[1.2rem] md:text-[1.4rem] uppercase font-bold">{item.author}</h3>
+                          <p className="text-[1.2rem] md:text-[1.4rem] designation">{item.designation}</p>
                         </div>
                       </div>
                     </div>
