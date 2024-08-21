@@ -11,7 +11,7 @@ const Footer = () => {
               AJ
             </Link>
         </div>
-        <h4 className='text-[2.5rem]'><span className="font-semibold">Thanks for Scrolling,</span> that's all folks.</h4>
+        <h4 className='text-[2.5rem]'><span className="font-semibold">Thanks for Scrolling,</span> that&apos;s all folks.</h4>
           <ul className="flex gap-8">
             <li>
               <Link href="https://www.linkedin.com/in/ajaj-rajguru-106a6086/" target="_blank">
