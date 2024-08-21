@@ -19,10 +19,10 @@ const Nav = ({mobile}) => {
             menu: "Blogs",
             link: "/posts"
         },
-        {
-            menu: "Sectors",
-            link: "/sectors"
-        },
+        // {
+        //     menu: "Sectors",
+        //     link: "/sectors"
+        // },
         // {
         //     menu: "Contact",
         //     link: "/contact"

@@ -34,8 +34,8 @@ const Header = () => {
 
     return (
         <>
-            <header className="flex items-center justify-between container mx-auto sticky top-0 backdrop-blur-sm z-10 w-full py-10">
-                <div className="flex flex-1 justify-between items-center">
+            <header className="flex items-center justify-between sticky top-0 backdrop-blur-sm z-10 w-full py-10">
+                <div className="flex flex-1 justify-between items-center container mx-auto">
                     <Link href="/" className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-semibold text-3xl md:text-[4.5rem] leading-normal">
                         {/* <Image src="../logo.svg" width="100" height="100" alt="Ajaj Rajguru - 
                         logo" /> */}

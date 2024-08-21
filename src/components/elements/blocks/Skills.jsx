@@ -1,4 +1,7 @@
+'use client';
 import Image from "next/image"
+import { useTheme } from "next-themes";
+
 import {
     HoverCard,
     HoverCardContent,
@@ -6,6 +9,10 @@ import {
 } from "../ui/hover-card"
 
 const Skills = () => {
+
+    const { theme } = useTheme();
+
+    
 
     const skillSet = [
         {
@@ -36,6 +43,7 @@ const Skills = () => {
 
     ]
 
+
     return (
         <section className="py-10 bg-secondary">
 
@@ -56,6 +64,7 @@ const Skills = () => {
                                     width={100}
                                     height={100}
                                     alt="Icons"
+                                    style={{filter: theme === 'light' ? 'invert(1)' : 'none'}}
                                 />
                                 <h3 className="text-3xl font-semibold text-background">{skill.skill}</h3>
                             </HoverCardTrigger>
