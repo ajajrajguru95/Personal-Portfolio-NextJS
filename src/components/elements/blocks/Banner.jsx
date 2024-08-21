@@ -10,9 +10,9 @@ const Banner = () => {
 
     return (
         <>
-            <section className='home-banner flex pb-[15rem] gap-10 container mx-auto items-center'>
-                <div className='flex-initial w-[60%] flex flex-col gap-10 items-baseline'>
-                    <h1 className='font-normal'>
+            <section className='home-banner flex flex-col md:flex-row pb-32 md:pb-[15rem] gap-10 container mx-auto items-center'>
+                <div className='flex-initial md:w-[60%] flex flex-col gap-10 items-baseline'>
+                    <h1 className='font-normal text-[4rem] md:text-[6rem]'>
                         Howdy, I&apos;m <span className='bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-semibold'>Ajaj</span>.
                     </h1>
                     {/* <DividerText>Introduction</DividerText> */}

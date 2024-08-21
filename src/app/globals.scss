@@ -74,9 +74,15 @@
   }
   .section-heading{
     @apply text-[3rem] leading-[1.4] font-medium;
+    @media (max-width: 768px) {
+      @apply text-[2rem]
+    }
   }
   .section-desc{
     @apply text-3xl leading-[1.5];
+    @media (max-width: 768px) {
+      @apply text-[1.5rem]
+    }
   }
 }
 
