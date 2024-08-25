@@ -120,3 +120,13 @@
     opacity: 1;
   }
 }
+
+.desktop-nav{
+  @media (max-width: 768px) {
+      display: none;
+  }
+}
+
+.gradient-text{
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500;
+}
