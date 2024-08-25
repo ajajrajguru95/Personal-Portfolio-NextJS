@@ -14,6 +14,9 @@ import {
   CarouselDots
 } from "../ui/carousel"
 
+
+import FadeInWrapper from "../ui/FadeInWrapper";
+
 const Recommendations = () => {
 
   const recommendations = [
@@ -115,12 +118,13 @@ const Recommendations = () => {
   const randomizedPositions = recommendations.map((_, idx) => positionStyles[idx % positionStyles.length]);
 
   return (
+    <FadeInWrapper>
     <section className="recommendations py-20 overflow-x-hidden">
       <div className="container relative after:content-[''] after:absolute after:left-[98%] after:top-0 after:w-[500px] after:h-full after:blur-md after:bg-background">
         {/* <div className="flex gap-20"> */}
 
         <h2 className="text-[2.5rem] md:text-[3rem] py-8 font-medium">
-          What Collegues say&apos;s about <span className='bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-semibold'>Ajaj</span> <br /> and the recommendations he received.
+        What do colleagues say about <span className='gradient-text font-semibold'>Ajaj</span> <br /> and what recommendations has he received? 🙌🏻
         </h2>
 
         <Carousel
@@ -190,6 +194,7 @@ const Recommendations = () => {
 
 
     </section>
+    </FadeInWrapper>
   );
 };
 

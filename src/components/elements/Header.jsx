@@ -4,6 +4,10 @@ import Image from "next/image";
 import Nav from "../elements/Nav";
 import { useEffect, useState } from "react";
 import { ThemeToggle } from "../../components/theme-toggle";
+import { useIsMobile } from "../../lib/Hooks";
+
+import { motion } from "framer-motion";
+
 
 import {
     Sheet,
@@ -17,32 +21,21 @@ import {
 
 
 const Header = () => {
-    const [isMobile, setisMobile] = useState(false);
-
-    useEffect(() => {
-
-        const handleResize = () => {
-            setisMobile(window.innerWidth <= 768);
-        }
-
-        handleResize();
-        window.addEventListener("resize", handleResize);
-
-        return () => window.removeEventListener("resize", handleResize);
-
-    }, []);
+    const isMobile = useIsMobile();
 
     return (
         <>
             <header className="flex items-center justify-between sticky top-0 backdrop-blur-sm z-10 w-full py-10">
                 <div className="flex flex-1 justify-between items-center container mx-auto">
+                    <motion.div whileHover={{ scale: 1.2 }}>
                     <Link href="/" className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-semibold text-3xl md:text-[4.5rem] leading-normal">
                         {/* <Image src="../logo.svg" width="100" height="100" alt="Ajaj Rajguru - 
                         logo" /> */}
                         AJ
                     </Link>
+                    </motion.div>
                 
-                {!isMobile ? <Nav mobile={isMobile} /> : (
+                {!isMobile ? <div className="desktop-nav"><Nav mobile={isMobile} /></div> : (
                     
                     <div className="mobile-nav pr-4 flex">
                         <Sheet>
@@ -52,7 +45,9 @@ const Header = () => {
                                 <SheetHeader>
                                     <SheetTitle>Are you absolutely sure? <ThemeToggle /></SheetTitle>
                                     <SheetDescription>
-                                        <Nav mobile={isMobile} />
+                                        <div>
+                                            <Nav mobile={isMobile} />
+                                        </div>
                                     </SheetDescription>
                                 </SheetHeader>
                             </SheetContent>

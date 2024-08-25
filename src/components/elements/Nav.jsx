@@ -28,8 +28,8 @@ const Nav = ({mobile}) => {
         //     link: "/contact"
         // },
     ]
+
   return (
-    <>
      <nav>
             <ul className="flex-col md:flex-row flex items-center gap-7">
                 {menuItem.map((item, idx) => (
@@ -44,7 +44,6 @@ const Nav = ({mobile}) => {
                 )}
             </ul>
         </nav>
-    </>
   )
 }
 
