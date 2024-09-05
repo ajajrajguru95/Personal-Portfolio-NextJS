@@ -4,7 +4,7 @@ const nextConfig = {
       remotePatterns: [
         {
           protocol: "http",
-          hostname: process.env.WORDPRESS_HOSTNAME || "localhost",
+          hostname: process.env.HOSTNAME || "localhost",
           port: "",
           pathname: "/**",
         },
