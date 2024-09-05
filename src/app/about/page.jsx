@@ -10,7 +10,7 @@ const About = () => {
         <section className='about-me sm:flex gap-20 mb-40'>
           <div className='flex-1'>
             <Image
-              src="/aj-edit.jpg"
+              src="/aj.jpg"
               alt='Ajaj'
               width={600}
               height={600}
