@@ -52,8 +52,8 @@ const Skills = () => {
 
             <div className="container mx-auto py-4 md:p-6 lg:p-12">
 
-                <h2 className="text-[2.5rem] md:text-[3rem] pt-4 md:pt-8 pb-10 md:pb-20 font-medium">
-                    What does <span className='bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-semibold'>Ajaj</span> do, and what is his skill set?🤓
+                <h2 className="text-[2.5rem] md:text-[4rem] pt-4 md:pt-8 pb-10 md:pb-20 font-medium">
+                    What does <span className='bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-semibold'>Ajaj</span> do, and what is his skill set? 🎩
                 </h2>
 
                 <div className="flex overflow-auto snap-mandatory snap-x md:snap-none md:grid md:grid-cols-5 lg:grid-cols gap-10">

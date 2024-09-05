@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
         
         {/* Contact Links */}
-        <ul className="grid grid-rows-3 sm:grid-cols-3 items-center gap-2 sm:gap-10">
+        <ul className="grid grid-rows-3 sm:grid-cols-3 sm:grid-rows-none items-center gap-2 sm:gap-10">
           <li className="text-center flex flex-col gap-2">
             <h4 className="flex gap-4 items-center justify-center"><span className="gradient-text font-semibold uppercase text-3xl">Email</span> 📫</h4>
             <p className="font-medium"><a href="mailto:ajajrajguru95@gmail.com">ajajrajguru95@gmail.com</a></p>

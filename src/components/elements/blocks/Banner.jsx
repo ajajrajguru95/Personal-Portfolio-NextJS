@@ -33,7 +33,7 @@ const Banner = () => {
                         <Link href="/about" className="theme-btn">About Me</Link>
 
                     </div>
-                    <div className='flex-initial w-[40%]'>
+                    <div className='hidden sm:block flex-initial w-[40%]'>
                         <div className="blob-wrapper">
                             <svg id="blob-svg" viewBox="0 0 480 480">
                                 <defs>

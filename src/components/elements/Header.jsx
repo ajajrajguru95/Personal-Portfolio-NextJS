@@ -43,7 +43,7 @@ const Header = () => {
                             </SheetTrigger>
                             <SheetContent>
                                 <SheetHeader>
-                                    <SheetTitle>Are you absolutely sure? <ThemeToggle /></SheetTitle>
+                                    <SheetTitle className="text-left"><ThemeToggle /></SheetTitle>
                                     <SheetDescription>
                                         <div>
                                             <Nav mobile={isMobile} />

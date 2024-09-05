@@ -123,8 +123,8 @@ const Recommendations = () => {
       <div className="container relative after:content-[''] after:absolute after:left-[98%] after:top-0 after:w-[500px] after:h-full after:blur-md after:bg-background">
         {/* <div className="flex gap-20"> */}
 
-        <h2 className="text-[2.5rem] md:text-[3rem] py-8 font-medium">
-        What do colleagues say about <span className='gradient-text font-semibold'>Ajaj</span> <br /> and what recommendations has he received? 🙌🏻
+        <h2 className="text-[2.5rem] md:text-[4rem] py-8 font-medium">
+        What do colleagues say about <span className='gradient-text font-semibold'>Ajaj</span> <br className="hidden xl:block" /> and what recommendations has he received? 🙌🏻
         </h2>
 
         <Carousel
