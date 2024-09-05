@@ -23,7 +23,7 @@ const Banner = () => {
                         {/* <DividerText>Introduction</DividerText> */}
 
                         <h2 className='section-heading'>
-                            Front end developer 👨🏻‍💻
+                            Front End Developer 👨🏻‍💻
                         </h2>
 
                         <p className='section-desc'>

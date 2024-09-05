@@ -28,7 +28,7 @@ const Header = () => {
             <header className="flex items-center justify-between sticky top-0 backdrop-blur-sm z-10 w-full py-10">
                 <div className="flex flex-1 justify-between items-center container mx-auto">
                     <motion.div whileHover={{ scale: 1.2 }}>
-                    <Link href="/" className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-semibold text-3xl md:text-[4.5rem] leading-normal">
+                    <Link href="/" className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-semibold text-5xl md:text-[5.5rem] leading-normal">
                         {/* <Image src="../logo.svg" width="100" height="100" alt="Ajaj Rajguru - 
                         logo" /> */}
                         AJ
