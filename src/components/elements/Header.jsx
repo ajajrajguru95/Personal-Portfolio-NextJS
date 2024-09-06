@@ -22,6 +22,7 @@ import {
 
 const Header = () => {
     const isMobile = useIsMobile();
+    const [isOpen, setIsOpen] = useState(false)
 
     return (
         <>
@@ -38,7 +39,7 @@ const Header = () => {
                 {!isMobile ? <div className="desktop-nav"><Nav mobile={isMobile} /></div> : (
                     
                     <div className="mobile-nav pr-4 flex">
-                        <Sheet>
+                        <Sheet open={isOpen} onOpenChange={setIsOpen}>
                             <SheetTrigger className="relative m-0 p-0 bg-none border-0 cursor-pointer outline-none bg-white w-8 h-[0.12rem] before:content-[''] before:absolute before:block before:w-8 before:h-[0.12rem] before:bg-white before:left-4 before:top-[10px] after:content-[''] after:absolute after:block after:w-8 after:h-0.5 after:bg-white after:left-4 after:bottom-[10px] transition-all duration-200 linear">
                             </SheetTrigger>
                             <SheetContent>
@@ -46,7 +47,7 @@ const Header = () => {
                                     <SheetTitle className="text-left"><ThemeToggle /></SheetTitle>
                                     <SheetDescription>
                                         <div>
-                                            <Nav mobile={isMobile} />
+                                            <Nav mobile={isMobile} open={setIsOpen} />
                                         </div>
                                     </SheetDescription>
                                 </SheetHeader>
